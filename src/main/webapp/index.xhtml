@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Perfil</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"></link>
+        <style>
+            body {
+                background-color: #BFBFBF; /* Color de fondo general */
+                color: #10403B; /* Color del texto principal */
+            }
+            .container {
+                background-color: #8AA6A3; /* Fondo del contenedor */
+            }
+            .col-5 {
+                background-color: #637371; /* Fondo de la columna */
+                color: #BFBFBF; /* Color del texto en la columna */
+            }
+            h1 {
+                color: #127369; /* Color del título */
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <marquee>
+                <h1>Portafolio profesional</h1>
+            </marquee>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-5" align="center">
+                    <h:outputText value="" />
+                    <h:graphicImage value="#{perfilBean.perfil.foto}" alt="Foto de Investigación" style="width: 250px;" />
+                </div>
+                <div class="col-5" align="left">
+                    <h:outputText value="Nombre: " />
+                    <h:outputText value="#{perfilBean.perfil.nombre}" />
+                    <br></br>
+                    <h:outputText value="Carrera: " />
+                    <h:outputText value="#{perfilBean.perfil.carrera}" />
+                    <br></br>
+                    <h:outputText value="Lenguajes de programación: " />
+                    <h:outputText value="#{perfilBean.perfil.lenguajes}" />
+                    <br></br>
+                    <h:outputText value="Base de datos: " />
+                    <h:outputText value="#{perfilBean.perfil.base}" />
+                    <br></br>
+                    <h:outputText value="Proyectos realizados: " />
+                    <h:outputText value="#{perfilBean.perfil.proyectos}" />
+                    <br></br>
+                    <h:outputText value="Promedio: " />
+                    <h:outputText value="#{perfilBean.perfil.promedio}" />
+                    <br></br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <br></br>
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>
